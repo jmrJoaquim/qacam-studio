@@ -1,11 +1,11 @@
 {
   "name": "qacam-studio",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Estúdio profissional de gravação e evidências para QA",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dist": "electron-builder --win --publish never"
+    "dist": "electron-builder --win --publish always"
   },
   "keywords": [],
   "author": "Joaquim Rodrigues",
@@ -17,6 +17,7 @@
   "build": {
     "appId": "com.qacam.studio",
     "productName": "QAcam Studio",
+    "compression": "maximum",
     "directories": {
       "output": "dist"
     },
